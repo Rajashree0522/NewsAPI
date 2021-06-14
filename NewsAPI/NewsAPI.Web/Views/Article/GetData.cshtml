@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @if (ViewBag.showAlert == true)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("The datas has been inserted Successfully");
+            };
+        </script>
+
+    }
+    <p>News API is a simple, easy-to-use REST API that returns JSON search results for current and historic news articles published by over 75,000 worldwide sources.</p>
+
+    <input type="button" value="Get Top Headlines" onclick="location.href='@Url.Action("CreateTopHeadlines", "Article")'" />
+    <input type="button" value="Get Business News" onclick="location.href='@Url.Action("CreateBusiness", "Article")'" />
+    <input type="button" value="Get Entertainment News" onclick="location.href='@Url.Action("CreateEntertainment", "Article")'" />
+    <input type="button" value="Get Health News" onclick="location.href='@Url.Action("CreateHealth", "Article")'" />
+    <input type="button" value="Get Science News" onclick="location.href='@Url.Action("CreateScience", "Article")'" />
+    <input type="button" value="Get Sports News" onclick="location.href='@Url.Action("CreateSports", "Article")'" />
+    <input type="button" value="Get Technology News" onclick="location.href='@Url.Action("CreateTechnology", "Article")'" />
+}

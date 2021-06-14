@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewsAPI.WebApi.Data.Model\NewsAPI.WebApi.Data.Model.csproj" />
+    <ProjectReference Include="..\NewsAPI.WebApi.Queries\NewsAPI.WebApi.Queries.csproj" />
+  </ItemGroup>
+
+</Project>
